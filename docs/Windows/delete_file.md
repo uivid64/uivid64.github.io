@@ -1,3 +1,5 @@
+## Delete a file with .bat file
+
 Create new doument.txt
 
 write in:

@@ -1,4 +1,6 @@
-Win + R to Run :
+
+
+Type Win + R to Run :
 
 msconfig
 
