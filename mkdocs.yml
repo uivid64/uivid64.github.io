@@ -1,5 +1,5 @@
 # [Info]
-site_name: uivid64 Space # 左上角标题
+site_name: uivid64 Space # Top left title
 site_url: https://github.com/uivid64/uivid64.github.io
 site_author: David
 site_description: uivid64 space
@@ -9,7 +9,7 @@ site_description: uivid64 space
 theme:
   name: material
   palette:
-    - scheme: default # 日间模式
+    - scheme: default # Day mode
       primary: indigo # 上方的
       accent: orange # 链接等可交互元件的高亮色
       toggle:
