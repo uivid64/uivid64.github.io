@@ -9,7 +9,7 @@ site_description: uivid64 space
 theme:
   name: material
   palette:
-    - scheme: auto # Day mode
+    - scheme: default # Day mode
       primary: indigo # 上方的
       accent: orange # 链接等可交互元件的高亮色
       toggle:
