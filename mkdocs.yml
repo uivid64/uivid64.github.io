@@ -54,6 +54,8 @@ nav:
       - winget: Windows/winget.md
       - WSA: Windows/WSA.md
       - WSL: Windows/WSL.md
+    - Blog:
+      - The Code Review Pyramid: Blogs/The Code Review Pyramid.md
 
 
 
