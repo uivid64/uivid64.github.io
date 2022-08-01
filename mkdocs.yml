@@ -46,7 +46,7 @@ extra:
 
 # [Navigtion]
 nav:
-    - Windows 10/11 issue:
+    - Develop with Windows 10/11:
       - conda tutorial: Windows/conda.md
       - delete file: Windows/delete_file.md
       - Win + R: Windows/Win+R.md
@@ -54,6 +54,7 @@ nav:
       - winget: Windows/winget.md
       - WSA: Windows/WSA.md
       - WSL: Windows/WSL.md
+      - docker : Windows/docker.md
     - Blog:
       - The Code Review Pyramid: Blogs/The Code Review Pyramid.md
       - Learn In Public: Blogs/Learn In Public.md
@@ -82,7 +83,7 @@ markdown_extensions:
   - pymdownx.superfences # 代码块高亮插件
   - meta # 支持Markdown文件上方自定义标题标签等
 extra_javascript:
-  # latex支持
+  # latex support
   # check https://squidfunk.github.io/mkdocs-material/reference/mathjax/?h=math for more information
   # notice `curl https://polyfill.io/v3/polyfill.min.js?features=es6 > docs/mkdocs/javascripts/polyfill.min.js && curl https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js > docs/mkdocs/javascripts/tex-mml-chtml.js` not works... because there are other resources that need to load
   - mkdocs/javascripts/mathjax.js
