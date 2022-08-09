@@ -47,18 +47,22 @@ extra:
 # [Navigtion]
 nav:
     - Develop with Windows 10/11:
-      - conda tutorial: Windows/conda.md
-      - delete file: Windows/delete_file.md
+      - Python with conda: Windows/conda.md
+      - Delete file: Windows/delete_file.md
       - Win + R: Windows/Win+R.md
-      - Windows 11: Windows/Windows 11.md
-      - winget: Windows/winget.md
+      - Windows 11 Tips: Windows/Windows 11.md
+      - Winget: Windows/winget.md
       - WSA: Windows/WSA.md
       - WSL: Windows/WSL.md
-      - docker : Windows/docker.md
+      - Docker Desktop : Windows/docker.md
     - Blog:
       - The Code Review Pyramid: Blogs/The Code Review Pyramid.md
       - Learn In Public: Blogs/Learn In Public.md
       - How to Write Software With Mathematical Perfection: Blogs/How to Write Software With Mathematical Perfection.md
+    - Thoughts:
+      - Camera on the phone: Thoughts/Camera on the phone.md
+      - Personal Preference: Thoughts/Personal Preference.md
+      - Pride and Prejudice: Thoughts/Pride and Prejudice.md
 
 
 
