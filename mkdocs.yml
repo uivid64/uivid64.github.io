@@ -56,13 +56,14 @@ nav:
       - WSL: Windows/WSL.md
       - Docker Desktop : Windows/docker.md
     - Blog:
-      - The Code Review Pyramid: Blogs/The Code Review Pyramid.md
-      - Learn In Public: Blogs/Learn In Public.md
-      - How to Write Software With Mathematical Perfection: Blogs/How to Write Software With Mathematical Perfection.md
+      - The Code Review Pyramid: Blog/The Code Review Pyramid.md
+      - Learn In Public: Blog/Learn In Public.md
+      - How to Write Software With Mathematical Perfection: Blog/How to Write Software With Mathematical Perfection.md
     - Thoughts:
       - Camera on the phone: Thoughts/Camera on the phone.md
       - Personal Preference: Thoughts/Personal Preference.md
       - Pride and Prejudice: Thoughts/Pride and Prejudice.md
+
 
 
 
