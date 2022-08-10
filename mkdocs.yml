@@ -22,18 +22,18 @@ theme:
         icon: material/weather-sunny
         name: Day Mode
   features:
-    - navigation.tabs # 使用Tab来进行分类
-    - navigation.top # 返回顶部的按钮 在上滑时出现
-    - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
-    - navigation.expand # 打开Tab时左侧目录全部展开
-    - search.suggest # 搜索输入一些字母时推荐补全整个单词
-    - search.highlight # 搜索出的文章关键词加入高亮
-  language: zh # 一些提示性的文字会变成中文
+    - navigation.tabs # Use Tab to sort
+    - navigation.top # The button to return to the top appears when sliding up
+    - navigation.indexes # Tab will have an index.md instead of opening the first article when the Tab is opened
+    - navigation.expand # When the Tab is opened, all the directories on the left are expanded
+    - search.suggest # When searching for some letters, it is recommended to complete the whole word
+    - search.highlight # The searched article keywords are added to the highlight
+  language: zh # Some hints will be changed to Chinese
   icon:
     repo: fontawesome/brands/github
-edit_uri: edit/main/docs # 编辑按钮跳转的链接
+edit_uri: edit/main/docs # Edit button jump link
 ## [top-right corner]
-repo_url: https://github.com/uivid64/uivid64.github.io # 右上角点击跳转的链接
+repo_url: https://github.com/uivid64/uivid64.github.io # Click the jump link in the upper right corner
 repo_name: David Blog
 ## [bottom-left corner]
 copyright: Copyright &copy; 2022 David
@@ -44,12 +44,12 @@ extra:
       link: https://github.com/uivid64
       name: GitHub | uivid64
 
-# [Navigtion]
+# [Navigation]
 nav:
     - Develop with Windows 10/11:
       - Python with conda: Windows/conda.md
       - Delete file: Windows/delete_file.md
-      - Win + R: Windows/Win+R.md
+      - Win+R: Windows/Win+R.md
       - Windows 11 Tips: Windows/Windows 11.md
       - Winget: Windows/winget.md
       - WSA: Windows/WSA.md
@@ -69,30 +69,30 @@ nav:
 
 # [Extensions]
 plugins:
-  - search: # 现在还不支持中文搜索 支持之后可以设置语言
-    # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
+  - search: # Chinese search is not supported yet. After support, you can set the language
+    # Insider already supports Chinese word segmentation search https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
       lang:
         - en
         - ja
-  - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
+  - tags # Add tags to a single article https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
 markdown_extensions:
-  - pymdownx.arithmatex: # latex支持
+  - pymdownx.arithmatex: # latex support
       generic: true
-  - attr_list # 给图片后面添加{width="300"}设置大小
+  - attr_list # Add {width="300"} to the back of the picture to set the size
   - toc:
-      permalink: true # 固定标题位置为当前位置
-  - pymdownx.highlight: # 代码块高亮
-      linenums: true # 显示行号
-      auto_title: true # 显示编程语言名称
-  - pymdownx.superfences # 代码块高亮插件
-  - meta # 支持Markdown文件上方自定义标题标签等
+      permalink: true # fix the title position to the current position
+  - pymdownx.highlight: # code block highlighting
+      linenums: true # show line numbers
+      auto_title: true # Display programming language name
+  - pymdownx.superfences # code block highlighting plugin
+  - meta # supports custom title tags above Markdown files, etc.
 extra_javascript:
-  # latex support
+  #latex support
   # check https://squidfunk.github.io/mkdocs-material/reference/mathjax/?h=math for more information
-  # notice `curl https://polyfill.io/v3/polyfill.min.js?features=es6 > docs/mkdocs/javascripts/polyfill.min.js && curl https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js > docs/mkdocs/javascripts/tex-mml-chtml.js` not works... because there are other resources that need to load
+  # notice `curl https://polyfill.io/v3/polyfill.min.js?features=es6 > docs/mkdocs/javascripts/polyfill.min.js && curl https://cdn.jsdelivr.net/npm/mathjax @3/es5/tex-mml-chtml.js > docs/mkdocs/javascripts/tex-mml-chtml.js` not works... because there are other resources that need to load
   - mkdocs/javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0
 extra_css:
-  - mkdocs/css/no-footer.css # 不使用底部的翻页
+  - mkdocs/css/no-footer.css # don't use bottom pager
   - mkdocs/css/unordered-list-symbols.css # multiplt unordered list symbols
