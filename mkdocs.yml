@@ -9,18 +9,18 @@ site_description: uivid64 space
 theme:
   name: material
   palette:
-    - scheme: default # Day mode
-      primary: indigo # 上方的
-      accent: orange # 链接等可交互元件的高亮色
+    - scheme: default # Day Mode
+      primary: indigo # Above
+      accent: orange # Highlight
       toggle:
-        icon: material/weather-night # 图标
-        name: 切换至夜间模式 # 鼠标悬浮提示
-    - scheme: slate # 夜间模式
+        icon: material/weather-night # Icon Style
+        name: Night Mode
+    - scheme: slate # Night Mode
       primary: indigo
       accent: orange
       toggle:
         icon: material/weather-sunny
-        name: 切换至日间模式
+        name: Day Mode
   features:
     - navigation.tabs # 使用Tab来进行分类
     - navigation.top # 返回顶部的按钮 在上滑时出现
@@ -34,9 +34,9 @@ theme:
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
 repo_url: https://github.com/uivid64/uivid64.github.io # 右上角点击跳转的链接
-repo_name: David Blog # 右上角的名字
+repo_name: David Blog
 ## [bottom-left corner]
-copyright: Copyright &copy; 2022 David # 左下角的版权声明
+copyright: Copyright &copy; 2022 David
 ## [bottom-right corner]
 extra:
   social: # icons
