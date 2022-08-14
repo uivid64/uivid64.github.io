@@ -1,6 +1,6 @@
 # Welcome to David's Blog
 
-Hello World
+`少年辛苦真食蓼，老境清闲如啖蔗。`
 
 ## Build With mkdocs
 
