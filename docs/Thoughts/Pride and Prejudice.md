@@ -105,5 +105,3 @@ So, probably, Austen, Qian Zhongshu, Zhang Eiling and Mr. Lu Xun, which were bor
 ** It's easy to be embarrassed when the words are full and there's no room for spin. **
 
 ** So just repeating that kind of talk is the perfect irony. **
-
-Translated with www.DeepL.com/Translator (free version)
