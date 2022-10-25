@@ -1,4 +1,4 @@
-# Camera on the phone
+# Camera on the Phone
 
 Jacobs had been slated to testify at the Apple trial before the companies settled. I asked him what he would have tried to get across if had taken the stand.
 
