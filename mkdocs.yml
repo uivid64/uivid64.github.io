@@ -49,6 +49,7 @@ nav:
     - Develop with Windows 10/11:
       - Python with conda: Windows/conda.md
       - Delete file: Windows/delete_file.md
+      - Proxy: Windows/proxy.md
       - Win+R: Windows/Win+R.md
       - Windows 11 Tips: Windows/Windows 11.md
       - Winget: Windows/winget.md
