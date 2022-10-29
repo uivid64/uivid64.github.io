@@ -68,9 +68,11 @@ export https_proxy=$http_proxy
 
 **You can find the proxy port information in Clash's settings screen. **
 
+
 ### Handy script
 
 Here is a handy script that contains functions to turn on and off.
+
 
 ```
 function proxy_on() {
@@ -85,6 +87,7 @@ function proxy_off(){
 }
 ```
 
+
 Start the proxy with `proxy_on` and turn it off with `proxy_off`.
 
 Next you need to write the script to `.bash_profile` or `.zprofile` so that it will be permanent.
@@ -97,6 +100,7 @@ As for which file you should write, please judge by the result of the command `e
 - `/bin/zsh` => `.zprofile`
 
 Then execute the **installation script** (append + take effect), note that the name of `.bash_profile` must be changed according to the above result: ``/bin/bash` => `/bin/zsh` => `.zprofile`
+
 
 ```
 cat > ~/.bash_profile << EOF
@@ -115,7 +119,9 @@ EOF
 source ~/.bash_profile
 ```
 
+
 Open the proxy
+
 
 ```
 proxy_on
@@ -129,6 +135,7 @@ proxy_off
 
 You can execute ``curl cip.cc`` to verify: (clash on global)
 
+
 ```
 IP : xxx
 Address : Taipei City, Taiwan, China
@@ -141,6 +148,7 @@ Data 3 : Taiwan, China | Chunghwa Telecom
 URL : http://www.cip.cc/xxx
 ````
 
+
 I've seen online that `curl -I http://www.google.com` may encounter `403` problem, you need to pay attention to this situation when using `Google` domain verification.
 
 ## Windows
@@ -149,17 +157,21 @@ According to the article on the web, using the global proxy method under `Window
 
 ### cmd
 
+
 ```
 set http_proxy=http://127.0.0.1:7890
 set https_proxy=http://127.0.0.1:7890
 ```
 
+
 Restore command.
+
 
 ```
 set http_proxy=
 set https_proxy=
 ```
+
 
 ### Git Bash
 
