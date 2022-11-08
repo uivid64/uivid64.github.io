@@ -1,50 +1,8 @@
 ## How to use the web proxy on the terminal
 
-### Error
 
-```
-'Connection to api.telegram.org timed out. (connect timeout=5.0)'
-```
 
-### Environment
-
-macOS 11.6, using ClashX 1.71.0.4, ClashX normal proxy, using self contained terminal.
-
-### Configuration
-
-Open the terminal and enter the following code to enable the proxy.
-
-```
-cat > ~/.bash_profile << EOF
-function proxy_on() {
-    export http_proxy=http://127.0.0.1:7890
-    export https_proxy=\$http_proxy
-    echo -e "Terminal proxy is enabled."
-}
-
-function proxy_off(){
-    unset http_proxy https_proxy
-    echo -e "Terminal proxy is off."
-}
-EOF
-
-source ~/.bash_profile
-
-proxy_on
-```
-
-Turn off the terminal proxy by typing ``proxy_off`` in the terminal.
-
-### Result
-
-```
-curl -I http://www.google.com
-HTTP/1.1 200 OK
-curl -I https://api.telegram.org
-HTTP/1.1 200 Connection established
-```
-
-## Preface
+### Preface
 
 When we use `Homebrew`, `git`, `npm` and other commands in the terminal, the installation always fails because of network problems.
 
@@ -54,12 +12,12 @@ Although it is true that setting up a mirror is useful, it is not universal, so 
 
 The proxy mentioned in the text refers to the case with `Clash`, other software also has some common ground.
 
-## macOS & Linux
+### macOS & Linux
 
 By setting `http_proxy`, `https_proxy`, you can make the terminal go through the specified proxy.
 The configuration script is as follows and will only take effect temporarily when executed directly in the terminal.
 
-```
+```shell
 export http_proxy=http://127.0.0.1:7890
 export https_proxy=$http_proxy
 ```
@@ -73,8 +31,7 @@ export https_proxy=$http_proxy
 
 Here is a handy script that contains functions to turn on and off.
 
-
-```
+```shell
 function proxy_on() {
     export http_proxy=http://127.0.0.1:7890
     export https_proxy=\$http_proxy
@@ -86,7 +43,6 @@ function proxy_off(){
     echo -e "Terminal proxy is off."
 }
 ```
-
 
 Start the proxy with `proxy_on` and turn it off with `proxy_off`.
 
@@ -102,7 +58,7 @@ As for which file you should write, please judge by the result of the command `e
 Then execute the **installation script** (append + take effect), note that the name of `.bash_profile` must be changed according to the above result: ``/bin/bash` => `/bin/zsh` => `.zprofile`
 
 
-```
+```shell
 cat > ~/.bash_profile << EOF
 function proxy_on() {
     export http_proxy=http://127.0.0.1:7890
@@ -151,51 +107,47 @@ URL : http://www.cip.cc/xxx
 
 I've seen online that `curl -I http://www.google.com` may encounter `403` problem, you need to pay attention to this situation when using `Google` domain verification.
 
-## Windows
+### Windows
 
 According to the article on the web, using the global proxy method under `Windows` will also work for `cmd` (without validation).
 
-### cmd
+#### cmd
 
-
-```
+```shell
 set http_proxy=http://127.0.0.1:7890
 set https_proxy=http://127.0.0.1:7890
 ```
 
-
 Restore command.
 
-
-```
+```shell
 set http_proxy=
 set https_proxy=
 ```
 
-
-### Git Bash
+#### Git Bash
 
 Set up the same as "macOS & Linux"
 
-### PowerShell
+#### PowerShell
 
-```
+```shell
 $env:http_proxy="http://127.0.0.1:7890"
 $env:https_proxy="http://127.0.0.1:7890"
 ```
 
 Restore command (not verified).
 
-```
+```shell
 $env:http_proxy=""
 $env:https_proxy=""
 ```
 
-## Other proxy settings
+### Other proxy settings
 
-### git proxy
+#### git proxy
 
-```
+```shell
 ## Settings
 git config --global http.proxy 'socks5://127.0.0.1:1080' 
 git config --global https.proxy 'socks5://127.0.0.1:1080'
@@ -205,27 +157,15 @@ git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
 
-### Github Proxy
+#### Github Proxy
 
 GitHub documentation , Releases , archive , gist , raw.githubusercontent.com file proxy accelerated download service.
 
-#### **git clone**
+```shell
+git clone https://ghproxy.com/https://github.com/stilleshan/ServerStatus
+```
 
-**git clone** https://ghproxy.com/https://github.com/stilleshan/ServerStatus
-
-#### **git clone private repository**
-
-The Clone private repository requires users to request a Token from [Personal access tokens](https://github.com/settings/tokens) to use it.
-**git clone** https://**user:your_token**@ghproxy.com/https://github.com/your_name/your_private_repo
-
-#### **wget & curl**
-
-**wget** https://ghproxy.com/https://github.com/stilleshan/ServerStatus/archive/master.zip
-**wget** https://ghproxy.com/https://raw.githubusercontent.com/stilleshan/ServerStatus/master/Dockerfile
-**curl -O** https://ghproxy.com/https://github.com/stilleshan/ServerStatus/archive/master.zip
-**curl -O** https://ghproxy.com/https://raw.githubusercontent.com/stilleshan/ServerStatus/master/Dockerfile
-
-### npm
+#### npm
 
 ```
 ### npm set
@@ -237,8 +177,6 @@ npm config set https-proxy http://server:port
 npm config delete proxy
 npm config delete https-proxy
 ```
-
-
 
 ### git clone ssh how to go proxy
 
@@ -266,7 +204,7 @@ Host github.com
     ProxyCommand connect -S 127.0.0.1:6600 %h %p
 ```
 
-## Do I have to set a separate proxy for git if I use a proxy on the terminal?
+### Do I have to set a separate proxy for git if I use a proxy on the terminal?
 
 There are two protocols for git, one is https and the other is ssh.
 
