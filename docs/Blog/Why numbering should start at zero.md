@@ -1,6 +1,6 @@
-[EWD831](https://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF)
+# Why numbering should start at zero
 
-Why numbering should start at zero
+[EWD831](https://www.cs.utexas.edu/users/EWD/ewd08xx/EWD831.PDF)
 
 To denote the subsequence of natural numbers 2, 3, ..., 12 without the pernicious three dots, four conventions are open to us
 
